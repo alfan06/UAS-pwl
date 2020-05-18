@@ -46,8 +46,8 @@ class TransaksiController extends Controller
             'form_params' => [
                 'id_kamar'      => $request->id_kamar,
                 'id_penyewa'    => $request->id_penyewa,
-                'tgl_sewa'      => $request->tgl_sewa,
-                'tgl_checkout'  => $request->tgl_checkout,
+                'tgl_sewa'      => date("Y-m-d"),
+                'tgl_checkout'  => date("Y-m-d"),
                 'status'        => 'Booked'
             ]
         ]);
